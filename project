@@ -1,0 +1,12 @@
+<html>
+<head>
+  <title>DOM-Based XSS</title>
+  <script>
+    var query = window.location.hash.substring(1);
+    document.write("<p>Your search for: <b>" + query + "</b></p>");
+  </script>
+</head>
+<body>
+  <h1>DOM-Based XSS</h1>
+</body>
+</html>
